@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ onCategoryFilter, onSearch }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = ['全部照片', '人像照片', '風景照片', 'Food', 'Nature', 'City'];
+  {/*  const categories = [  '人像照片', '風景照片', 'Food', 'Nature', 'City'];*/}
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ onCategoryFilter, onSearch }) => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation  
           <nav className="hidden md:flex items-center space-x-8">
             {categories.map((category) => (
               <button
@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ onCategoryFilter, onSearch }) => {
               </button>
             ))}
           </nav>
-
+          */}
           {/* Search and Mobile Menu */}
           <div className="flex items-center space-x-4">
             {/* Search Bar */}

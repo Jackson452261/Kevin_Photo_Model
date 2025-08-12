@@ -27,6 +27,11 @@ const BlogPost: React.FC = () => {
 
   return (
     <article className="min-h-screen bg-white">
+
+       <Link 
+       to="/" className="text-2xl font-bold text-slate-800 hover:text-blue-600 transition-colors duration-200 cursor-pointer mt-8">
+      回到首頁
+      </Link>
       {/* Hero Image / Carousel */}
       <div className="relative h-96 lg:h-[500px] overflow-hidden">
         {post.images && post.images.length > 1 ? (
